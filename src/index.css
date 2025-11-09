@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+.hi {
+  transition: width 0.2s;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  display: flex;
+  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.side-bar {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  width: 22.5%;
+  padding-right: 20px;
+  overflow: scroll;
+  justify-content: space-between;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7 {
+  height: 23vh;
+  transform: scale(1, 1);
+  margin-bottom: 0.313rem;
+}
+
+button {
+  width: 45px;
+  height: 40px;
+}
+.image-container {
+  position: relative;
+  transition: all 0.1s;
+  overflow: hidden;
+  transform: scale(1, 1);
+  border-top-left-radius: 9px;
+  cursor: "move";
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.btn1 {
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.864);
+  color: black;
+  border: 1px solid rgb(83, 83, 83);
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  z-index: 500;
+}
+
+.btn2 {
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.864);
+  border: 1px solid rgb(83, 83, 83);
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  z-index: 500;
+}
+
+.btn1:hover {
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.72);
+}
+
+.btn2:hover {
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.72);
+}
+
+.btn1:active {
+  background-color: rgba(255, 255, 255, 0.409);
+}
+
+.btn2:active {
+  background-color: rgba(255, 255, 255, 0.409);
+}
+
+.disabled {
+  pointer-events: none;
+}
