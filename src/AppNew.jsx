@@ -22,7 +22,7 @@ function ImageZoomInOut() {
   const [clickedImageId, setClickedImageId] = useState("1");
   const [scale, setScale] = useState(1);
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [transform, setTransform] = useState(position);
+  // const [transform, setTransform] = useState(position);
   const imageRef = useRef(null);
   const containerRef = useRef(null);
   const images = {
@@ -41,18 +41,18 @@ function ImageZoomInOut() {
     return;
   }
 
-  function handleTransform() {
-    const image = imageRef.current;
-    const container = containerRef.current;
-    const containCoords = container.getBoundingClientRect();
+  // function handleTransform() {
+  //   const image = imageRef.current;
+  //   const container = containerRef.current;
+  //   const containCoords = container.getBoundingClientRect();
 
-    setTransform(function () {
-      if (containCoords.x - image.getBoundingClientRect().x < 20) {
-        return `top left`;
-      }
-    });
-    return;
-  }
+  //   setTransform(function () {
+  //     if (containCoords.x - image.getBoundingClientRect().x < 20) {
+  //       return `top left`;
+  //     }
+  //   });
+  //   return;
+  // }
 
   function handleZoomIn(e) {
     e.preventDefault();
@@ -228,7 +228,7 @@ function ImageZoomInOut() {
               style={
                 clickedImageId
                   ? {
-                      transformOrigin: { transform },
+                      // transformOrigin: { transform },
                       transform: `scale(${scale}) translate(${position.x}px, ${position.y}px)`,
                     }
                   : {
