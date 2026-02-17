@@ -29,10 +29,7 @@ $ npm run dev
 The drag functionality is not as smooth as I would like and the coordination with the mouse needs to be refined, especially when an image is very zoomed in. Also there is a small bug when the the user attempts to drag beyond the confines of the image (it keeps snapping back to the last permitted coordinate) which I will need to fix.
 
 
-````
-````
-
-## React + Vite
+# React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
