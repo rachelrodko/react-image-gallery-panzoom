@@ -24,13 +24,6 @@ $ npm install
 $ npm run dev
 ```
 
-
-```bash
-$ npx npm-check-updates -u
-$ npm install -g yarn-upgrade-all
-yarn-upgrade-all
-$ npm run dev
-```
 ## Amendments for the future
 
 The drag functionality is not as smooth as I would like and the coordination with the mouse needs to be refined, especially when an image is very zoomed in. Also there is a small bug when the the user attempts to drag beyond the confines of the image (it keeps snapping back to the last permitted coordinate) which I will need to fix.
