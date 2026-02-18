@@ -1,5 +1,5 @@
 # Image Gallery and Panzoom
-###(React)
+### (React)
 
 I have created a small image gallery and panzoom application in React. This is a personal side project that I created resulting from a requirement to build a zoom / drag component to help transcribers more easily view and document genealogical archive information from birth / marriage / death certificates. 
 
